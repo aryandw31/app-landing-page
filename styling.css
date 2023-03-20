@@ -1,0 +1,123 @@
+.jumbotron{
+/*    background: url(https://freenaturestock.com/wp-content/uploads/freenaturestock-2111-1024x683.jpg) center center;*/
+/*    first center is for */
+/*    'center' property will align the element in the center of the div*/
+    
+/*    background-size: cover;*/
+/*    the original width of the element adjusts to the width of the screen*/
+	
+	background:  url(https://freenaturestock.com/wp-content/uploads/freenaturestock-2111-1024x683.jpg);
+	
+	background-size: 100% 100%;
+/*	the element covers 100% horizontal width and 100% vertical height of its parent element at all times*/
+    height: 600px;
+		color: #d6e0e0
+}
+
+.logo{
+    height: 65px;
+    width: 65px;
+/*    margin-left: 10px;*/
+    position: relative;
+    top: -15px;
+/*    left: 12px;*/
+}
+
+.featured h1{
+		padding-top: 80px
+}
+
+.featured .btn{
+		background-color: rgba(78, 222, 222, 0.5);
+		color: #f5f9f6;
+/*		border-radius: 10px*/
+		margin-right: 15px;
+		width: 150px;
+}
+
+.featured .btn:hover{
+		background-color: rgba(78, 222, 222, 0.85);
+	color: white
+}
+
+.more-info{
+	text-align: center;
+}
+
+.more-info img{
+	height: 70px;
+	widows: 200px;
+	margin: 20px;
+}
+
+.footer{
+	background-color: #dbdbdb;
+	padding-top: 10px;
+}
+
+/*Adding styling for window size between 480px to 768px using media queries*/
+@media (max-width: 550px){
+	.jumbotron{
+		height: 350px;
+/*		color: brown;*/
+	}
+	.logo{
+		height: 50px;
+		width: 50px;
+		top: -20px;
+		left: -10px;
+	}
+	.featured h1{
+		padding-top: 20px;
+	}
+	.featured p, .featured a{
+		font-size: 15px;
+	}
+	.featured{
+		text-align: center;
+	}
+	.more-info img{
+		height: 70px;
+		widows: 200px;
+/*		padding: 10px;*/
+		margin: 10px;
+	}
+	.footer{
+		padding: 50px 0 50px 0;
+		margin-top: 20px
+	}
+}
+
+/*Adding styling for window size between 480px to 768px using media queries*/
+@media (min-width: 550px) and (max-width: 768px){
+	.jumbotron{
+		height: 410px;
+/*		color: yellow;*/
+	}
+	.logo{
+		height: 50px;
+		width: 50px;
+		top: -20px;
+		left: -10px;
+	}
+	.featured h1{
+		padding-top: 40px;
+	}
+	.featured p{
+		font-size: 18px;
+	}
+	.featured{
+		text-align: center;
+	}
+	
+	.more-info img{
+		height: 70px;
+		widows: 200px;
+		margin: 20px;
+	}
+	
+	.footer{
+		padding: 30px 0 30px 0;
+	}
+	
+}
